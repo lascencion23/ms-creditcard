@@ -19,7 +19,7 @@ public class CreditCardServiceImpl implements CreditCardService {
 	private final WebClient webClient;
 	private final ReactiveCircuitBreaker reactiveCircuitBreaker;
 	
-	String uri = "http://localhost:8090/api/ms-customer/customer/find/{id}";
+	String uri = "http://gateway:8090/api/ms-customer/customer/find/{id}";
 	
 	public CreditCardServiceImpl(ReactiveResilience4JCircuitBreakerFactory circuitBreakerFactory) {
 		this.webClient = WebClient.builder().baseUrl(this.uri).build();
