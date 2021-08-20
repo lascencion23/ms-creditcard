@@ -20,8 +20,10 @@ public class CreditCard {
     @NotNull
     private String id;
 
-    @NotEmpty
     private String cardNumber;
+
+    @NotEmpty
+    private String accountNumber;
 
     private Customer customer;
 
